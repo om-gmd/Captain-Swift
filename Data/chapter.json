@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1,
+    "title": "Welcome to iOS Superhero Academy",
+    "subtitle": "Your origin story begins here",
+    "emoji": "🦸",
+    "chapterImage": "chapter1_icon",
+    "markdownFile": "chapter1",
+    "sections": [
+      {
+        "id": "1-1",
+        "heading": "Meet Your Two Heroes",
+        "body": "Every superhero needs an origin story, and yours begins right here! Before we dive into building amazing apps, let's meet our two main heroes: UIKit and SwiftUI. Think of them as two different — but equally powerful — ways to bring your app ideas to life on Apple devices.",
+        "codeSnippet": null,
+        "challenge": null
+      },
+      {
+        "id": "1-2",
+        "heading": "UIKit — The Classic Hero",
+        "body": "UIKit is like a master builder, a seasoned veteran who has been constructing incredible apps for a long time. When you use UIKit, you tell it exactly how to build everything, step-by-step. It's incredibly powerful and gives you total control over every single detail.",
+        "codeSnippet": null,
+        "challenge": null
+      },
+      {
+        "id": "1-3",
+        "heading": "SwiftUI — The New Magic Power",
+        "body": "SwiftUI is the new kid on the block, but don't let that fool you — it's got serious magic! Instead of telling it HOW to build, you tell SwiftUI WHAT you want. It figures out the best way to make it happen automatically.",
+        "codeSnippet": null,
+        "challenge": "If you were building your ultimate superhero gadget, would you prefer to give super-detailed step-by-step instructions (like UIKit) or describe what you want and let magic handle the details (like SwiftUI)? Think about why!"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Swift Basics — Your Superpower Foundation",
+    "subtitle": "Learn the language that powers everything",
+    "emoji": "⚡",
+    "chapterImage": "chapter2_icon",
+    "markdownFile": "chapter2",
+    "sections": [
+      {
+        "id": "2-1",
+        "heading": "Variables — Your Changing Gadgets",
+        "body": "A variable is like a pouch in your utility belt that can hold different gadgets. You can put a grappling hook in it, then later swap it for a smoke bomb. Its value can change!",
+        "codeSnippet": "var heroName = \"Captain Swift\"\nprint(heroName) // Captain Swift\n\nheroName = \"The Code Crusader\"\nprint(heroName) // The Code Crusader",
+        "challenge": null
+      },
+      {
+        "id": "2-2",
+        "heading": "Constants — Your Unchanging Origin",
+        "body": "A constant is like your superhero's origin story — once it's set, it never changes! Use let for values that should never change. This makes your code safer and easier to understand.",
+        "codeSnippet": "let secretIdentity = \"OMGMD\"\nprint(secretIdentity) // OMGMD\n\n// secretIdentity = \"Another\" // ERROR!",
+        "challenge": null
+      },
+      {
+        "id": "2-3",
+        "heading": "Data Types — Different Kinds of Power",
+        "body": "Just like there are different kinds of superpowers, Swift has different data types to store different kinds of information. String for text, Int for whole numbers, Double for decimals, and Bool for true/false values.",
+        "codeSnippet": "let catchphrase: String = \"To infinity and beyond!\"\nlet villainsDefeated: Int = 10\nlet flightSpeed: Double = 3.14\nvar isFlying: Bool = true",
+        "challenge": null
+      },
+      {
+        "id": "2-4",
+        "heading": "Optionals — The Mystery Box",
+        "body": "Imagine you open a mystery box. It might contain a super-gadget, or it might be empty! In Swift, an Optional is like that mystery box. It can either hold a value or hold nothing (nil). We use ? after a type to make it optional.",
+        "codeSnippet": "var superGadget: String? = \"Invisibility Cloak\"\nprint(superGadget) // Optional(\"Invisibility Cloak\")\n\nsuperGadget = nil\nprint(superGadget) // nil",
+        "challenge": null
+      },
+      {
+        "id": "2-5",
+        "heading": "Unwrapping Optionals Safely",
+        "body": "To use the value inside an optional, you need to safely unwrap it. The safest way is if let — it's like saying 'If there's a gadget in the box, take it out and use it!'",
+        "codeSnippet": "var secretWeapon: String? = \"Laser Blaster\"\n\nif let weapon = secretWeapon {\n    print(\"Hero equipped with \\(weapon)!\")\n} else {\n    print(\"No weapon found!\")\n}",
+        "challenge": "Create an optional Int called superHeroLevel. Write code using if let to print 'Your hero is level X!' if it has a value, or 'Your hero needs more training!' if it is nil."
+      },
+      {
+        "id": "2-6",
+        "heading": "Functions — Your Super Moves",
+        "body": "Every superhero has special moves. In programming, these are called functions. A function is a block of code that performs a specific task. You define it once and call it whenever you need it.",
+        "codeSnippet": "func performSuperPunch() {\n    print(\"POW! Super Punch delivered!\")\n}\n\nfunc flyToLocation(destination: String, speed: Double) {\n    print(\"Flying to \\(destination) at \\(speed) mph!\")\n}\n\nperformSuperPunch()\nflyToLocation(destination: \"Metropolis\", speed: 1000.0)",
+        "challenge": "Create a closure that takes a String (a villain's name) and prints 'Defeated [Villain Name]!' Then call your closure with a villain's name."
+      },
+      {
+        "id": "2-7",
+        "heading": "Structs vs Classes",
+        "body": "Structs are like superhero trading cards — when you copy one, you get your own independent copy. Classes are like a shared headquarters — everyone refers to the same place. In SwiftUI, structs are preferred because they're safer and faster.",
+        "codeSnippet": "struct HeroStats {\n    var strength: Int\n    var speed: Int\n}\n\nvar captainStats = HeroStats(strength: 100, speed: 90)\nvar sidekickStats = captainStats // independent copy\n\nsidekickStats.strength = 50\nprint(captainStats.strength) // still 100\nprint(sidekickStats.strength) // 50",
+        "challenge": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "UIKit — The Classic Hero",
+    "subtitle": "Master the veteran framework",
+    "emoji": "🏛️",
+    "chapterImage": "chapter3_icon",
+    "markdownFile": "chapter3",
+    "sections": [
+      {
+        "id": "3-1",
+        "heading": "What is UIKit?",
+        "body": "UIKit is Apple's original UI framework, battle-tested since 2008. It gives you precise, imperative control over every pixel on screen. You tell it exactly what to do and when to do it. Most existing iOS apps are built with UIKit.",
+        "codeSnippet": "import UIKit\n\nclass MyViewController: UIViewController {\n    override func viewDidLoad() {\n        super.viewDidLoad()\n        view.backgroundColor = .systemBackground\n    }\n}",
+        "challenge": null
+      },
+      {
+        "id": "3-2",
+        "heading": "UIViewController — Your Control Room",
+        "body": "A UIViewController is the brain behind every screen in UIKit. It controls what appears, how it behaves, and responds to user interactions. Every screen is a view controller.",
+        "codeSnippet": "class HeroViewController: UIViewController {\n\n    override func viewDidLoad() {\n        super.viewDidLoad()\n        setupUI()\n    }\n\n    private func setupUI() {\n        let label = UILabel()\n        label.text = \"Hello, Hero!\"\n        label.frame = CGRect(x: 50, y: 200, width: 300, height: 44)\n        view.addSubview(label)\n    }\n}",
+        "challenge": null
+      },
+      {
+        "id": "3-3",
+        "heading": "Auto Layout — Positioning Your Gadgets",
+        "body": "Auto Layout lets you define rules (constraints) for how views position themselves relative to each other and the screen. It adapts to every iPhone and iPad size automatically.",
+        "codeSnippet": "let button = UIButton(type: .system)\nbutton.setTitle(\"Activate Power\", for: .normal)\nbutton.translatesAutoresizingMaskIntoConstraints = false\nview.addSubview(button)\n\nNSLayoutConstraint.activate([\n    button.centerXAnchor.constraint(equalTo: view.centerXAnchor),\n    button.centerYAnchor.constraint(equalTo: view.centerYAnchor),\n    button.widthAnchor.constraint(equalToConstant: 200),\n    button.heightAnchor.constraint(equalToConstant: 50)\n])",
+        "challenge": "Create a UILabel with your hero's name and use Auto Layout to pin it 40 points from the top, centered horizontally."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "SwiftUI — The New Magic Power",
+    "subtitle": "Build beautiful UIs with less code",
+    "emoji": "✨",
+    "chapterImage": "chapter4_icon",
+    "markdownFile": "chapter4",
+    "sections": [
+      {
+        "id": "4-1",
+        "heading": "Declarative vs Imperative",
+        "body": "SwiftUI is declarative — you describe what you want, not how to build it. UIKit is imperative — you give step-by-step instructions. With SwiftUI you say 'I want a blue button here', and it handles everything else.",
+        "codeSnippet": "struct HeroView: View {\n    var body: some View {\n        VStack {\n            Text(\"Captain Swift\")\n                .font(.largeTitle)\n                .foregroundStyle(.orange)\n            Button(\"Activate Power\") {\n                print(\"Pow!\")\n            }\n        }\n    }\n}",
+        "challenge": null
+      },
+      {
+        "id": "4-2",
+        "heading": "State — Making Views Come Alive",
+        "body": "@State is a property wrapper that tells SwiftUI 'when this value changes, redraw the view'. It's the secret sauce that makes your UI reactive and dynamic.",
+        "codeSnippet": "struct PowerButton: View {\n    @State private var isActivated = false\n\n    var body: some View {\n        Button(isActivated ? \"Power ON ⚡\" : \"Power OFF\") {\n            isActivated.toggle()\n        }\n        .foregroundStyle(isActivated ? .green : .red)\n        .font(.headline)\n    }\n}",
+        "challenge": "Create a view with a @State counter variable. Add a button that increments it and a Text that displays the current count."
+      },
+      {
+        "id": "4-3",
+        "heading": "Stacks — VStack, HStack, ZStack",
+        "body": "Stacks are how you arrange views in SwiftUI. VStack stacks vertically, HStack horizontally, and ZStack layers views on top of each other. Master these three and you can build almost any layout.",
+        "codeSnippet": "VStack(spacing: 16) {\n    HStack {\n        Image(systemName: \"bolt.fill\")\n        Text(\"Speed: 1000 mph\")\n    }\n    HStack {\n        Image(systemName: \"shield.fill\")\n        Text(\"Defence: Maximum\")\n    }\n}",
+        "challenge": null
+      },
+      {
+        "id": "4-4",
+        "heading": "Lists and ForEach",
+        "body": "List and ForEach let you display collections of data efficiently. SwiftUI only renders what's visible on screen, making even huge lists fast.",
+        "codeSnippet": "let heroes = [\"Captain Swift\", \"Iron Coder\", \"The Debugger\"]\n\nList(heroes, id: \\.self) { hero in\n    HStack {\n        Image(systemName: \"person.fill\")\n        Text(hero)\n    }\n}",
+        "challenge": "Create an array of your favourite superheroes and display them in a SwiftUI List with an SF Symbol next to each name."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "SwiftUI vs UIKit — The Showdown",
+    "subtitle": "When to use which, and how to mix both",
+    "emoji": "⚔️",
+    "chapterImage": "chapter5_icon",
+    "markdownFile": "chapter5",
+    "sections": [
+      {
+        "id": "5-1",
+        "heading": "Head to Head Comparison",
+        "body": "SwiftUI and UIKit both have strengths. SwiftUI wins on speed of development, animations, and live previews. UIKit wins on fine-grained control, performance tuning, and accessing older APIs. Knowing both makes you unstoppable.",
+        "codeSnippet": null,
+        "challenge": null
+      },
+      {
+        "id": "5-2",
+        "heading": "Using UIKit Inside SwiftUI",
+        "body": "UIViewRepresentable is the bridge that lets you wrap any UIKit view and use it inside SwiftUI. This is how you use UIKit components that don't have SwiftUI equivalents yet.",
+        "codeSnippet": "struct ActivityIndicator: UIViewRepresentable {\n    func makeUIView(context: Context) -> UIActivityIndicatorView {\n        UIActivityIndicatorView(style: .large)\n    }\n\n    func updateUIView(_ uiView: UIActivityIndicatorView,\n                      context: Context) {\n        uiView.startAnimating()\n    }\n}",
+        "challenge": null
+      },
+      {
+        "id": "5-3",
+        "heading": "Using SwiftUI Inside UIKit",
+        "body": "UIHostingController lets you embed any SwiftUI view inside a UIKit app. This is the key to migrating existing UIKit apps to SwiftUI gradually — one screen at a time.",
+        "codeSnippet": "let swiftUIView = HeroStatsView()\nlet hostingVC = UIHostingController(rootView: swiftUIView)\n\n// Present it like any UIViewController\npresent(hostingVC, animated: true)",
+        "challenge": "Think about an app you use every day. Which screens do you think are UIKit and which might be SwiftUI? Why?"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "App Architecture — Building the HQ",
+    "subtitle": "Structure your code like a senior engineer",
+    "emoji": "🏗️",
+    "chapterImage": "chapter6_icon",
+    "markdownFile": "chapter6",
+    "sections": [
+      {
+        "id": "6-1",
+        "heading": "Why Architecture Matters",
+        "body": "Architecture is the blueprint of your app's code. Without it, as your app grows, the code becomes a tangled mess. Good architecture keeps your code clean, testable, and easy to change.",
+        "codeSnippet": null,
+        "challenge": null
+      },
+      {
+        "id": "6-2",
+        "heading": "MVVM — Model View ViewModel",
+        "body": "MVVM separates your app into three layers. The Model holds data. The View shows the UI. The ViewModel is the translator — it takes raw data and transforms it into something the View can display.",
+        "codeSnippet": "@Observable\nclass HeroViewModel {\n    var hero = Hero(name: \"Captain Swift\", powerLevel: 9000)\n    var displayPower: String {\n        \"Power Level: \\(hero.powerLevel)\"\n    }\n}\n\nstruct HeroView: View {\n    @State var vm = HeroViewModel()\n    var body: some View {\n        Text(vm.displayPower)\n    }\n}",
+        "challenge": null
+      },
+      {
+        "id": "6-3",
+        "heading": "@Observable — Modern State Management",
+        "body": "The @Observable macro (iOS 17+) is the modern way to make your ViewModels reactive. Mark a class with @Observable and SwiftUI automatically redraws any view that uses its properties when they change.",
+        "codeSnippet": "@Observable\nclass ScoreKeeper {\n    var score = 0\n    var level = 1\n\n    func addPoints(_ points: Int) {\n        score += points\n        if score > level * 100 {\n            level += 1\n        }\n    }\n}",
+        "challenge": "Create an @Observable class called GameState with a score property and an addScore() function. Wire it up to a SwiftUI view that shows the score and a button to add 10 points."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Data Heroes — SwiftData",
+    "subtitle": "Persist data like a pro",
+    "emoji": "💾",
+    "chapterImage": "chapter7_icon",
+    "markdownFile": "chapter7",
+    "sections": [
+      {
+        "id": "7-1",
+        "heading": "What is SwiftData?",
+        "body": "SwiftData is Apple's modern persistence framework for saving data that survives when your app closes. It replaces the older CoreData with a much simpler, Swift-native approach. Think of it as your app's permanent memory.",
+        "codeSnippet": "import SwiftData\n\n@Model\nclass SavedHero {\n    var name: String\n    var powerLevel: Int\n    var dateAdded: Date\n\n    init(name: String, powerLevel: Int) {\n        self.name = name\n        self.powerLevel = powerLevel\n        self.dateAdded = Date()\n    }\n}",
+        "challenge": null
+      },
+      {
+        "id": "7-2",
+        "heading": "Saving and Loading Data",
+        "body": "With SwiftData you use @Query to load data and modelContext.insert() to save it. SwiftUI automatically rerenders your view when the data changes — no manual refresh needed.",
+        "codeSnippet": "struct HeroListView: View {\n    @Environment(\\.modelContext) private var context\n    @Query private var heroes: [SavedHero]\n\n    var body: some View {\n        List(heroes) { hero in\n            Text(hero.name)\n        }\n        .toolbar {\n            Button(\"Add Hero\") {\n                let newHero = SavedHero(name: \"Byte Man\", powerLevel: 42)\n                context.insert(newHero)\n            }\n        }\n    }\n}",
+        "challenge": "Create a SwiftData model for a Villain with name, lair, and threatLevel properties. Add a view to display and add villains."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Connecting to the World — Networking",
+    "subtitle": "Fetch data from the internet",
+    "emoji": "🌐",
+    "chapterImage": "chapter8_icon",
+    "markdownFile": "chapter8",
+    "sections": [
+      {
+        "id": "8-1",
+        "heading": "URLSession — Your Data Courier",
+        "body": "URLSession is Swift's built-in tool for making network requests. Think of it as a super-fast courier that fetches packages (data) from the internet and delivers them to your app.",
+        "codeSnippet": "func fetchHeroData() async throws -> Data {\n    let url = URL(string: \"https://api.example.com/heroes\")!\n    let (data, _) = try await URLSession.shared.data(from: url)\n    return data\n}",
+        "challenge": null
+      },
+      {
+        "id": "8-2",
+        "heading": "Codable — Decoding the Package",
+        "body": "Codable lets Swift automatically convert JSON from the internet into your Swift structs. No manual parsing needed — just tell Swift the shape of your data.",
+        "codeSnippet": "struct HeroResponse: Codable {\n    let id: Int\n    let name: String\n    let powerLevel: Int\n}\n\nlet decoded = try JSONDecoder().decode(\n    HeroResponse.self,\n    from: data\n)\nprint(decoded.name)",
+        "challenge": null
+      },
+      {
+        "id": "8-3",
+        "heading": "Async/Await — The Modern Way",
+        "body": "async/await is Swift's modern approach to handling tasks that take time, like network requests. Instead of complex callbacks, you write code that reads like a straight line, top to bottom.",
+        "codeSnippet": "@Observable\nclass NetworkViewModel {\n    var heroes: [HeroResponse] = []\n    var isLoading = false\n\n    func loadHeroes() async {\n        isLoading = true\n        do {\n            let url = URL(string: \"https://api.example.com/heroes\")!\n            let (data, _) = try await URLSession.shared.data(from: url)\n            heroes = try JSONDecoder().decode([HeroResponse].self, from: data)\n        } catch {\n            print(\"Error: \\(error)\")\n        }\n        isLoading = false\n    }\n}",
+        "challenge": "Using the JSONPlaceholder API (https://jsonplaceholder.typicode.com/users), fetch and display a list of users in a SwiftUI List."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Animations, Gestures & Polish",
+    "subtitle": "Make your app feel magical",
+    "emoji": "🎨",
+    "chapterImage": "chapter9_icon",
+    "markdownFile": "chapter9",
+    "sections": [
+      {
+        "id": "9-1",
+        "heading": "SwiftUI Animations",
+        "body": "SwiftUI makes animations incredibly easy. Wrap any state change in withAnimation and SwiftUI smoothly transitions between states automatically. No keyframes, no duration calculations — just magic.",
+        "codeSnippet": "struct BouncingHero: View {\n    @State private var isJumping = false\n\n    var body: some View {\n        Text(\"🦸\")\n            .font(.system(size: 60))\n            .offset(y: isJumping ? -50 : 0)\n            .animation(\n                .spring(response: 0.3, dampingFraction: 0.5),\n                value: isJumping\n            )\n            .onTapGesture {\n                isJumping.toggle()\n            }\n    }\n}",
+        "challenge": null
+      },
+      {
+        "id": "9-2",
+        "heading": "Gestures — Touch, Swipe, Pinch",
+        "body": "SwiftUI has built-in gesture recognizers for tap, long press, drag, swipe, magnification, and rotation. Chain them together for complex multi-gesture interactions.",
+        "codeSnippet": "struct DraggableHero: View {\n    @State private var position = CGSize.zero\n\n    var body: some View {\n        Text(\"🦸\")\n            .font(.system(size: 60))\n            .offset(position)\n            .gesture(\n                DragGesture()\n                    .onChanged { value in\n                        position = value.translation\n                    }\n                    .onEnded { _ in\n                        withAnimation(.spring()) {\n                            position = .zero\n                        }\n                    }\n            )\n    }\n}",
+        "challenge": "Build a view with a hero emoji that scales up on long press and returns to normal size on release, using a spring animation."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Building Real Apps",
+    "subtitle": "Step-by-step project walkthroughs",
+    "emoji": "📱",
+    "chapterImage": "chapter10_icon",
+    "markdownFile": "chapter10",
+    "sections": [
+      {
+        "id": "10-1",
+        "heading": "Project 1 — Hero Tracker App",
+        "body": "We'll build a complete Hero Tracker app from scratch. It will have a list of heroes, a detail screen, the ability to add and delete heroes, and data persistence with SwiftData. This ties together everything you've learned.",
+        "codeSnippet": "@Model class TrackedHero {\n    var name: String\n    var power: String\n    var rating: Int\n    init(name: String, power: String, rating: Int) {\n        self.name = name\n        self.power = power\n        self.rating = rating\n    }\n}",
+        "challenge": null
+      },
+      {
+        "id": "10-2",
+        "heading": "Project 2 — Weather Hero",
+        "body": "Build a weather app using a real public API. You'll practice networking, JSON decoding, async/await, and displaying dynamic data. By the end you'll have an app that shows real weather for any city.",
+        "codeSnippet": "struct WeatherData: Codable {\n    let name: String\n    let main: MainData\n\n    struct MainData: Codable {\n        let temp: Double\n        let humidity: Int\n    }\n}",
+        "challenge": "Extend the Weather Hero app to show a 5-day forecast by using the forecast endpoint of your chosen weather API."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Testing, Debugging & Performance",
+    "subtitle": "Ship code you're proud of",
+    "emoji": "🔬",
+    "chapterImage": "chapter11_icon",
+    "markdownFile": "chapter11",
+    "sections": [
+      {
+        "id": "11-1",
+        "heading": "Unit Testing — Bulletproof Your Logic",
+        "body": "Unit tests verify that individual pieces of your code work correctly in isolation. They're like a training simulation for your hero — testing each superpower before the real mission.",
+        "codeSnippet": "import XCTest\n@testable import CaptainSwift\n\nfinal class UserProgressTests: XCTestCase {\n\n    func testNoCompletionsOnInit() {\n        let progress = UserProgress()\n        XCTAssertTrue(progress.completedChapterIDs.isEmpty)\n    }\n\n    func testMarkingChapterCompleted() {\n        var progress = UserProgress()\n        progress.completedChapterIDs.insert(1)\n        XCTAssertTrue(progress.isCompleted(1))\n        XCTAssertFalse(progress.isCompleted(2))\n    }\n}",
+        "challenge": null
+      },
+      {
+        "id": "11-2",
+        "heading": "Debugging with Xcode",
+        "body": "Debugging is the art of finding and fixing problems. Xcode gives you breakpoints, the LLDB console to inspect any variable, and the Debug Navigator to monitor CPU and memory in real time.",
+        "codeSnippet": "func loadChapters() {\n    print(\"📖 Loading chapters...\")\n    guard let url = Bundle.main.url(\n        forResource: \"chapter\",\n        withExtension: \"json\"\n    ) else {\n        print(\"❌ chapter.json not found\")\n        return\n    }\n    print(\"✅ Found at \\(url)\")\n}",
+        "challenge": "Add a breakpoint to your HomeViewModel's loadChapters() function. Run the app and inspect the chapters array in the LLDB console by typing 'po chapters'."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Becoming the Ultimate iOS Master",
+    "subtitle": "Your journey has just begun",
+    "emoji": "🏆",
+    "chapterImage": "chapter12_icon",
+    "markdownFile": "chapter12",
+    "sections": [
+      {
+        "id": "12-1",
+        "heading": "You Made It, Hero!",
+        "body": "You've journeyed through Swift basics, UIKit, SwiftUI, architecture, data, networking, animations, and real app building. You are no longer a beginner. You have the foundation to build anything you can imagine on iOS.",
+        "codeSnippet": null,
+        "challenge": null
+      },
+      {
+        "id": "12-2",
+        "heading": "What to Build Next",
+        "body": "The best way to solidify your skills is to build. Pick one of these projects: a habit tracker, a personal finance app, a workout logger, or clone your favourite simple app. Start small, ship it, then iterate.",
+        "codeSnippet": null,
+        "challenge": null
+      },
+      {
+        "id": "12-3",
+        "heading": "The Developer's Code",
+        "body": "Write code that others can read. Test before you ship. Ask for help without shame — every senior engineer Googles things daily. Contribute to open source. Teach what you know. The iOS community grows stronger when we share.",
+        "codeSnippet": null,
+        "challenge": "Your final mission: build one app from scratch, put it on TestFlight, and share it with one real person. That's it. That's how you become an iOS developer."
+      }
+    ]
+  }
+]
+
